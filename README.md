@@ -56,4 +56,4 @@ This project is licensed under the [MIT License](https://opensource.org/license/
 ## 💬 Feedback
 If you have any suggestions or encounter issues, please feel free to open an [issue](https://github.com/deadshotofficial/minimal-portfolio/issues).
 
-# Made with ❤️ by [DeadShot]([https.](https://github.com/deadshotofficial)
+## Made with ❤️ by [DeadShot]([https.](https://github.com/deadshotofficial)
