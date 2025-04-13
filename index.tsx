@@ -69,7 +69,7 @@ export default function Portfolio() {
                 <div className="rounded-full overflow-hidden border-4 border-primary w-40 h-40 relative">
                   <Image
                     alt="Profile picture"
-                    src="https://media.discordapp.net/attachments/1201570570765086780/1327591481837355068/deadshot-pfp.jpg?ex=67839f6a&is=67824dea&hm=a761fcd47ea6337e25927a9b4a3bf9ecf170caf53bf2e6fe268dd60d8847e786&=&format=webp&width=741&height=741"
+                    src="https://avatars.githubusercontent.com/u/63696670?v=4"
                     fill
                     className="object-cover"
                     priority
