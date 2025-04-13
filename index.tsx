@@ -1,11 +1,22 @@
-import { Github, Mail, Linkedin, Twitter, Calendar, Building2, GraduationCap, Code2, Instagram, Briefcase } from 'lucide-react'
-import Image from "next/image"
-import Link from "next/link"
+import {
+  Github,
+  Mail,
+  Linkedin,
+  Twitter,
+  Calendar,
+  Building2,
+  GraduationCap,
+  Code2,
+  Instagram,
+  Briefcase,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { ThemeProvider } from "./components/theme-provider"
-import { ThemeToggle } from "./components/theme-toggle"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ThemeProvider } from "./components/theme-provider";
+import { ThemeToggle } from "./components/theme-toggle";
 
 export default function Portfolio() {
   return (
@@ -54,17 +65,17 @@ export default function Portfolio() {
               </nav>
             </header>
             <main className="flex-1">
-              <section className="flex flex-col md:flex-row items-center justify-center gap-8 py-12 md:py-20">
-                <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-primary">
+              <section className="flex flex-col items-center md:flex-row md:items-center justify-center gap-8 py-12 md:py-20 text-center md:text-left">
+                <div className="rounded-full overflow-hidden border-4 border-primary w-40 h-40 relative">
                   <Image
                     alt="Profile picture"
-                    className="object-cover"
-                    fill
                     src="https://media.discordapp.net/attachments/1201570570765086780/1327591481837355068/deadshot-pfp.jpg?ex=67839f6a&is=67824dea&hm=a761fcd47ea6337e25927a9b4a3bf9ecf170caf53bf2e6fe268dd60d8847e786&=&format=webp&width=741&height=741"
+                    fill
+                    className="object-cover"
                     priority
                   />
                 </div>
-                <div className="space-y-4 text-center md:text-left">
+                <div className="space-y-4">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                     DeadShot 👋
                   </h1>
@@ -72,6 +83,7 @@ export default function Portfolio() {
                     MERN Stack Developer 👨‍💻
                   </p>
                   <div className="flex gap-4 justify-center md:justify-start">
+                    {/* Socials */}
                     <Button variant="ghost" size="icon" asChild>
                       <Link href="https://github.com/deadshotofficial">
                         <Github className="w-5 h-5" />
@@ -107,10 +119,11 @@ export default function Portfolio() {
                     About Me
                   </h2>
                   <p className="text-muted-foreground">
-                    Hi! I'm DeadShot, an 18yo learner. I'm an upcoming MERN (or maybe full)
-                    stack developer with a passion for building beautiful,
-                    functional, and user-friendly websites and applications. Currently learning Node.js, Next.js,
-                    React, TypeScript and Kotlin. 🚀
+                    Hi! I'm DeadShot, an 18yo learner. I'm an upcoming MERN (or
+                    maybe full) stack developer with a passion for building
+                    beautiful, functional, and user-friendly websites and
+                    applications. Currently learning Node.js, Next.js, React,
+                    TypeScript and Kotlin. 🚀
                   </p>
                 </div>
               </section>
@@ -140,7 +153,8 @@ export default function Portfolio() {
                       </div>
                       <ul className="list-disc list-inside text-muted-foreground mt-4 space-y-2">
                         <li>
-                          Trying to learn new things and implement them while studying in college.
+                          Trying to learn new things and implement them while
+                          studying in college.
                         </li>
                       </ul>
                     </Card>
@@ -158,8 +172,7 @@ export default function Portfolio() {
                     <div className="flex items-start justify-between">
                       <div>
                         <h3 className="font-semibold">
-                          BTech in Computer Science &
-                          Engineering
+                          BTech in Computer Science & Engineering
                         </h3>
                         <p className="text-muted-foreground flex items-center gap-2 mt-1">
                           <Building2 className="w-4 h-4" />
@@ -225,9 +238,7 @@ export default function Portfolio() {
                   </p>
                   <div className="flex justify-center gap-4">
                     <Button asChild>
-                      <Link href="mailto:deadshot3r@pm.me">
-                        Contact Me
-                      </Link>
+                      <Link href="mailto:deadshot3r@pm.me">Contact Me</Link>
                     </Button>
                     <Button variant="outline" asChild>
                       <Link href="/resume.pdf">View Resume</Link>
